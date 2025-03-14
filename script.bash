@@ -2,7 +2,7 @@
 DAY=$(date +'%d')
 cd files/
 rm *
-FILE_NAME=$("new-file" + $DAY + ".js")
+FILE_NAME="new-file$DAY.js"
 touch $FILE_NAME
 cat <<EOL > $FILE_NAME 
 $(date +'%m/%d/%Y')
