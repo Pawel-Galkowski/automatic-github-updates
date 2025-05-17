@@ -16,6 +16,7 @@ INDEX_FILE="index.txt"
 NUMBER=$(cat $INDEX_FILE)
 echo "$(($NUMBER+1))" > $INDEX_FILE
 
+git remote add origin git@github.com:Pawel-Galkowski/automatic-github-updates.git
 git add --all
 git commit -m "powerfull day $($NUMBER)"
 git push -u
